@@ -8,7 +8,6 @@ body {
     padding: $padding;
     background-color: $background-color;
     overflow-x: hidden;
-
     
 }
 
@@ -63,7 +62,7 @@ article {
 
 article code {
 
-    background: #000;
+    background: $bg-color;
     border: 1px solid $primary-color;
     color: $font-color;
     page-break-inside: avoid;
