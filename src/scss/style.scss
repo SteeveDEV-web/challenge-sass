@@ -1,0 +1,119 @@
+@import "variable.scss";
+
+body {
+
+    font: 100% $font-stack;
+    color: $primary-color;
+    margin: 0;
+    padding: $padding;
+    background-color: $background-color;
+    overflow-x: hidden;
+
+    
+}
+
+.title{
+    color: $title;
+    text-align: center;
+
+    h1{
+        @extend .title;
+    }
+    h2{
+        @extend .title;
+    }
+    h3{
+        @extend .title;
+
+        font-size: 1.5em;
+        padding: 32px;
+        margin-bottom: 0px;
+    }
+
+main {
+    padding-top: $padding-top 1em;
+    padding-bottom: $padding-bottom;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    article section {
+
+        flex-grow: 1;
+        flex-basis: 45%;
+        border: 1px $article-section-border-color;
+        @include shadow (box-shadow);
+        padding: $padding;
+        margin: 16px;
+        clear: both;
+        overflow: auto;
+        box-sizing: border-box;
+
+        #selling-points {
+            flex-grow: 2;
+            flex-basis: 100%;
+
+        }       
+    }
+}
+
+
+article code {
+
+    background: #000;
+    border: 1px solid $primary-color;
+    color: $font-color;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+
+    &.before {
+        float: left;
+        width: 40%;
+    }
+
+    &.after {
+        float: right;
+        width: 40%;
+    }
+}
+
+.messages {
+
+    border: 1px $article-section-border-color;
+    color: $background-color;
+    padding: $padding;
+
+    .success {
+
+        @extend .messages;
+        background-color: $bg1-color;
+    }
+
+    .error {
+
+        @extend .messages;
+        background-color: $bg2-color;
+        
+        &:hover{
+        background-color: $bg1-color;
+    }
+        
+    .warning {
+
+        @extend .messages;
+        background-color: $bg3-color;
+    }
+} 
+}
+}

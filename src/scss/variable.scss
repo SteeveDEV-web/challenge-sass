@@ -1,0 +1,49 @@
+// Body // 
+
+$font-stack: "Space Mono", monospace;
+$primary-color: #6b717f;
+$background-color: #fff;
+
+// Main padding //
+
+$padding-top: 0;
+$padding-bottom: 0;
+
+// Article-section //
+
+$article-section-border-color: #8C8C8C, solid;
+$box-shadow: #6b717f;
+
+// Article code //
+
+$bg-color: #000;
+$border: #6b717f, 1px, solid;
+$font-color: #8C8C8C;
+
+// Title //
+
+$title: #BF4080;
+
+// Succes, error, warning //
+
+$border: #8C8C8C, 1px, solid;
+$font-color: #FFF; 
+$bg1-color: green;
+$bg2-color: red;
+$bg3-color: yellow;
+
+// Padding //
+
+$padding: 16px;
+
+// Mixin box-shadow //
+
+@mixin shadow($value) {
+
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+    
+}
+
+
