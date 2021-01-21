@@ -28,7 +28,7 @@ body {
         padding: 32px;
         margin-bottom: 0px;
     }
-
+}
 main {
     padding-top: $padding-top 1em;
     padding-bottom: $padding-bottom;
@@ -89,30 +89,29 @@ article code {
 
 .messages {
 
-    border: 1px $article-section-border-color;
-    color: $background-color;
-    padding: $padding;
+        border: 1px $article-section-border-color;
+        color: $background-color;
+        padding: $padding;
 
-    .success {
+        .success {
 
-        @extend .messages;
-        background-color: $bg1-color;
-    }
+            @extend .messages;
+            background-color: $bg1-color;
+        }
 
-    .error {
+        .error {
 
-        @extend .messages;
-        background-color: $bg2-color;
-        
-        &:hover{
-        background-color: $bg1-color;
-    }
-        
-    .warning {
+            @extend .messages;
+            background-color: $bg2-color;
+            
+            &:hover{
+            background-color: $bg1-color;
+        }
+            
+        .warning {
 
-        @extend .messages;
-        background-color: $bg3-color;
-    }
-} 
-}
+            @extend .messages;
+            background-color: $bg3-color;
+        }
+    } 
 }
