@@ -58,17 +58,20 @@ article code {
     float: right;
     width: 40%; }
 
-.messages, .messages .success, .messages .error, .messages .error .warning {
+.messages, .success, .error, .warning {
   border: 1px #8C8C8C, solid;
   color: #fff;
   padding: 16px; }
-  .messages .success, .messages .error .warning .success {
+
+.success {
+  background-color: green; }
+
+.error {
+  background-color: red; }
+  .error:hover {
     background-color: green; }
-  .messages .error, .messages .error .warning .error {
-    background-color: red; }
-    .messages .error:hover {
-      background-color: green; }
-    .messages .error .warning {
-      background-color: yellow; }
+
+.warning {
+  background-color: yellow; }
 
 /*# sourceMappingURL=style.css.map */

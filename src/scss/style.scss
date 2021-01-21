@@ -92,7 +92,7 @@ article code {
         border: 1px $article-section-border-color;
         color: $background-color;
         padding: $padding;
-
+        }
         .success {
 
             @extend .messages;
@@ -105,7 +105,8 @@ article code {
             background-color: $bg2-color;
             
             &:hover{
-            background-color: $bg1-color;
+            background-color: $bg1-color; 
+            }
         }
             
         .warning {
@@ -113,5 +114,5 @@ article code {
             @extend .messages;
             background-color: $bg3-color;
         }
-    } 
-}
+     
+
